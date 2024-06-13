@@ -10,8 +10,8 @@
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav primary">
                 <li class="nav-item dropdown">
                     <a class="nav-link {% if request.path == home_url %}nav-active" 
                     aria-current="page{% endif %}" href="{% url 'home' %}">

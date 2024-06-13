@@ -1,3 +1,7 @@
+/* Import Google Fonts -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 /* General -------------------------------------------------- */
 body {
     font-family: "Roboto", sans-serif;
@@ -19,3 +23,37 @@ h6 {
 #nav-logo {
     width: 150px;
 }
+
+.navbar {
+    background-color: #cce7bd !important;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Lilita One", sans-serif;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
