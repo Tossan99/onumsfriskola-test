@@ -67,6 +67,19 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link {% if request.path == home_url %}nav-active" 
+                        aria-current="page{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            OM OSS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Personal</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Historia</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Sök Tjänst</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Önums Andan</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Elevhälsa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link {% if request.path == home_url %}nav-active" 
                         aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             KLASSER
                         </a>
@@ -80,30 +93,13 @@
                             <li><a class="dropdown-item" href="{% url 'home' %}">Lönnen (4an-6an)</a></li>
                             <li><a class="dropdown-item" href="{% url 'home' %}">Linden (4an-6an)</a></li>
                             <li><a class="dropdown-item" href="{% url 'home' %}">Spindelnätet (Fritids)</a></li>
-                            
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link {% if request.path == home_url %}nav-active" 
-                        aria-current="page{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            OM OSS
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link {% if request.path == home_url %}nav-active" 
-                        aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        aria-current="page{% endif %}" href="{% url 'home' %}">
                             DOKUMENT & LÄNKAR
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
