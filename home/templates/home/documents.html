@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block extra_title %}Dokument{% endblock %}
+
+{% block content %}
+<!-- index.html content starts here -->
+
+<section class="container-xxl">
+    <div class="row bg-light my-5 mx-1 mx-md-0">
+        <h2 class="text-center mt-2">Dokument & Länkar</h2>
+        <hr class="mx-2">
+        <div class="row my-2">
+            <div class="col text-center">
+                <h4><i class="fa-solid fa-file-invoice me-2"></i>Dokument namn</h4>
+            </div>
+            <div class="col-12 text-center">
+                <a href="" target="_blank" class="btn btn-sm btn-primary w-75">
+                    Öppna Dokument<i class="fa-regular fa-folder-open ms-2"></i>
+                </a>
+            </div>
+            <hr class="mx-2 mt-2">
+        </div>
+    </div>
+</section>
+
+<!-- index.html content ends here -->
+{% endblock %}
