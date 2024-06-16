@@ -10,20 +10,20 @@
 {% block content %}
 <!-- index.html content starts here -->
 
-<div class="container-xxl bg-light my-4">
-    <div class="row justify-content-center p-2">
-        <h2 class="col-12 text-center mt-2">Dokument & Länkar</h2>
+<div class="container-xxl main-container my-4">
+    <div class="row justify-content-evenly p-2">
+        <h2 class="col-12 text-center mt-4 h1">Dokument & Länkar</h2>
         <hr class="col-11">
         {% for document in documents %}
-        <div class="col-12 col-md-6 my-4">
+        <div class="col-12 col-sm-11 col-md-9 col-lg-5 my-4 py-3 content-container">
             <div class="row justify-content-center p-0">
                 {% if document.category == "dokument" %}
                 <div class="col-12 text-center">
                     <h4><i class="fa-solid fa-file-invoice me-2 document-icon"></i>{{ document.name }}</h4>
                 </div>
                 <div class="col-12 text-center">
-                    <a href="{{ document.url }}" target="_blank" class="btn btn-sm btn-primary">
-                        Öppna Dokument<i class="fa-regular fa-folder-open ms-2"></i>
+                    <a href="{{ document.url }}" target="_blank" class="btn btn-primary">
+                        Öppna dokument<i class="fa-regular fa-folder-open ms-2"></i>
                     </a>
                 </div>
                 {% elif document.category == "länk" %}
@@ -31,15 +31,26 @@
                     <h4><i class="fa-solid fa-link me-2 url-icon"></i>{{ document.name }}</h4>
                 </div>
                 <div class="col-12 text-center">
-                    <a href="{{ document.url }}" target="_blank" class="btn btn-sm btn-primary">
+                    <a href="{{ document.url }}" target="_blank" class="btn btn-primary">
                         Gå till sida<i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
                     </a>
                 </div>
                 {% endif %}
-                <hr class="col-10 col-md-7 mt-2">
             </div>
         </div>
         {% endfor %}
+        <div class="col-12 col-sm-11 col-md-10 col-lg-5 my-4 py-3 content-container">
+            <div class="row justify-content-center p-0">
+                <div class="col-12 text-center">
+                    <h4>Lägg Till Mer</h4>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="{% url 'home' %}" target="_blank" class="btn btn-success">
+                        Lägg till<i class="fa-solid fa-plus ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
