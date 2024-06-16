@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     background-image: url("../images/background.webp");
     background-size: cover;
-
 }
 
 h1,
@@ -74,5 +73,16 @@ h6 {
 
 footer {
     background-color: #aec3a3;
+}
+
+/* Containers -------------------------------------------------- */
+.main-container {
+    background-color: rgb(236, 240, 241, 0.85);
+}
+
+.content-container {
+    background-color: #ECF0F1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
