@@ -20,9 +20,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls, name='admin'),
+    path('admin/', admin.site.urls,),
     path('', include('home.urls')),
-    path('blogg', include('blog.urls')),
+    path('klasser/', include('blog.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 HANDLER403 = "home.views.view_custom403"
