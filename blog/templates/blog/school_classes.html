@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/school_classes.css' %}">
+{% endblock %}
+
+{% block extra_title %}
+    {% if school_class %}
+        {{ school_class.name }} 
+    {% else %}
+        Klasser
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<!-- School_classes.html content starts here -->
+
+<div class="container-xxl main-container my-4">
+    <div class="row justify-content-evenly p-2">
+        <h2 class="col-12 text-center mt-4 h1">{% if school_class %}{{ school_class.name }} {% else %}Alla Klasser{% endif %}</h2>
+        <p>
+            {% for school_class in school_classes %}
+                <a href="{% url 'school_class' school_class.slug %}" class="btn btn-primary">{{ school_class.name }}</a>
+            
+            {% endfor %}
+        </p>
+        <hr class="col-11">
+    </div>
+</div>
+
+<!-- School_classes.html content ends here -->
+{% endblock %}
