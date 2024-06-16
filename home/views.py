@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Document
 
 def view_home(request):
     """
@@ -14,8 +15,10 @@ def view_documents(request):
     """
     View to render documents and links page
     """
-    context = {
+    documents = Document.objects.all()
 
+    context = {
+        "documents": documents,
     }
 
     return render(request, 'home/documents.html', context)
