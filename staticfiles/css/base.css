@@ -42,7 +42,7 @@ h6 {
     display: inline-block;
     position: relative;
   }
-  
+
   .nav-link::after {
     content: '';
     position: absolute;
@@ -61,6 +61,7 @@ h6 {
     transform-origin: bottom left;
   }
 
+
 /* Footer -------------------------------------------------- */
 
 #footer-logo {
@@ -72,7 +73,8 @@ h6 {
 }
 
 footer {
-    background-color: #aec3a3;
+background-color: #758c69;
+color: white;
 }
 
 /* Containers -------------------------------------------------- */
@@ -83,6 +85,5 @@ footer {
 .content-container {
     background-color: #ECF0F1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
