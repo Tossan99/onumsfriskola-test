@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block extra_title %}Skolan{% endblock %}
+
+{% block content %}
+<!-- about.html content starts here -->
+<div class="container bg-light mb-3">
+    <div class="row g-0 showcase-item">
+        <img class="col-lg-6 order-lg-2 object-fit-cover showcase-img" 
+        src="{% static 'images/skolan.jpg' %}" alt="School">
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h3 class="mx-4"><ins>Om Skolan</ins></h2>
+            <div class="mb-0 mx-4">
+                <p>Önums Friskola startade hösten 1993 för att rädda skolan från nedläggning. Huvudman för skolan är Stiftelsen Önums Friskola bestående av föräldrar. Skolans profil är naturskola.
+                    Från start fanns en 6-årsgrupp och två åldersintegrerade klasser med årskurs 1-3. Önums Friskola köpte den fastigheten där skolan tidigare drevs i kommunens regi.</p>
+                <p>1995 utökades verksamheten till att även omfatta årskurs 4-5 samt med förskola 1-5 år. Även inköp av intilliggande fastighet. Från och med höstterminen 2009 har vi dessutom årskurs 6 på skolan.</p>
+                <p>Skolan är öppen för alla, men elever från närområdet (f.d. upptagningsområdet) har förtur.</p>
+                <p>Undervisningen bedrivs enligt Läroplan för grundskolan, förskoleklassen och fritidshemmet 2011 och Läroplan för förskolan Lpfö 98 Reviderad 2010.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row g-0 showcase-item">
+        <img class="col-lg-6 object-fit-cover showcase-img" 
+            src="{% static 'images/highfive.jpg' %}" alt="Kids making an highfive">
+        <div class="col-lg-6 my-auto showcase-text">
+            <h3 class="mx-4 my-3"><ins>Önmus Andan</ins></h3>
+            <div class="mb-0 mx-4">
+                <p>På vår skola råder Önumsandan som ska genomsyra all verksamhet på Önums Friskola.
+                    Det här är varje mentors skyldighet att förmedla till ny personal. Detta ska ske kontinuerligt under den 
+                första tiden genom diskussioner och att levandegöra exempel. Det är rektors ansvar att Önums-andan hålls levande.</p>
+                <p class="fw-bold">Den innebär följande:</p>
+                <ul>
+                    <li>Alla barn är allas – vi har ett gemensamt ansvar.</li>
+                    <li>Vi bemöter alla barn utifrån deras egna behov.</li>
+                    <li>Blandar barnen vid olika aktiviteter – vi lär känna varandra.</li>
+                    <li>Trygghet.</li>
+                    <li>Glädje/nyfikenhet.</li>
+                    <li>Flexibel personal med positivt synsätt.</li>
+                    <li>All personal hör ihop – vi vuxna är ett nät – alla är lika viktiga – samhörighet mellan personalen.</li>
+                    <li>Alla barn är delaktiga efter sina förutsättningar, alla ska bli sedda för den de är.</li>
+                    <li>Naturprofileringen, från förskolan till åk 6.</li>
+                    <li>Att alla ska vara goda förebilder.</li>
+                    <li>Hälsa på varandra – ett leende föder fler.</li>
+                    <li>Föräldradelaktighet, att ha ett förtroende familj-skola.</li>
+                    <li>Alla ska lämna Önums Friskola med en rak rygg och en tro på sig själva. ​</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row g-0 showcase-item">
+        <img class="col-lg-6 order-lg-2 object-fit-cover showcase-img" 
+        src="{% static 'images/book.jpg' %}" alt="A book">
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h3 class="mx-4 my-3"><ins>Historia</ins></h3>
+            <div class="mb-0 mx-4">
+                <p>På hösten 1992 blev föräldrarna kallade till möte i Önums skola. Rektorn talade om att efter julen ska barnen flyttas till Vara skola.
+                    Han hade ingen aning om att Önums skola hade så starka och envisa föräldrar. De ville ha kvar sin skola för annars anade man att det skulle bli tyst och tomt utan barnen.</p>
+                <p>Även kyrkan och IFK Emtunga ville bevara skolan för att kunna bevara sina verksamheter. Klassföräldrarna undersökte hur läget var för att starta friskola vilket var ovanligt i Sverige vid den tiden. 
+                    Frågorna var många: Vem ville arbeta på skolan? Hur skulle vi fixa mat? Hur skulle barnen komma till skolan? Fick vi köpa skolhuset från kommunen? Vilken inriktning skulle skolan ha?</p>
+                <p>Vi bestämde att skolan skulle drivas som en stiftelse och en ansökan skickades in till Skolverket.
+                    Visionen var att ha en skola från 1 till 12 år, men nu i första ansökan blev det förskoleklass till trean. I april fick vi JA från Skolverket, det firades med tårta hemma hos
+                    Britt-Marie för hon var dagmamma och många barn var hos henne.</p>
+                <p>Alla var inte lika glada som vi, många olyckskorpar kraxade. Hur skulle vi klara allt, det kanske skulle gå några år men sedan …?
+                    De förstod inte att föräldragruppen som arbetat för skolan visste hur man skulle göra och att vi var mycket duktiga fixare för alla hjälptes åt. 
+                    Det svåraste var om föräldrarna orkade vänta längre eftersom vi inte kunde ge några säkra besked och hur det skulle bli med skolan.</p>
+                <p>Styrelsen som vi tillsatt hade ett hårt arbete framför sig, men det förstod de inte förrän de rott alltihop i land.
+                    De hade möten till två på nätterna och när skolbyggnaden skulle köpas kom kommundirektör Gert Norell ut till Önum för att träffa styrelsen.
+                        Kommunen förhalade en del frågor, bl.a. om vi fick köpa skolbänkar och matsalsmöbler, men slutligen fick vi ett pris och skolhuset var vårt.</p>
+                <p>I augusti 1993 kunde Christina Abrahamsson, Aina Wästfält, Lilian Gidstedt Carlsson, Manne Ryttman, Ulrika Larsson och Ann-Marie Holmgren hälsa 47 elever välkomna till en nymålad och fin skola.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about.html content ends here -->
+{% endblock %}

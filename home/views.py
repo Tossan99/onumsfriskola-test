@@ -22,3 +22,10 @@ def view_documents(request):
     }
 
     return render(request, 'home/documents.html', context)
+
+def view_about(request):
+    """
+    View to render about page
+    """
+    return render(request, 'home/about.html')
+
