@@ -17,17 +17,27 @@
 <!-- School_classes.html content starts here -->
 
 <div class="container-xxl main-container my-4">
-    <div class="row justify-content-evenly p-2">
-        <h2 class="col-12 text-center mt-4 h1">{% if school_class %}{{ school_class.name }} {% else %}Alla Klasser{% endif %}</h2>
-        <p>
-            {% for school_class in school_classes %}
-                <a href="{% url 'school_class' school_class.slug %}" class="btn btn-primary">{{ school_class.name }}</a>
-            
-            {% endfor %}
-        </p>
-        <hr class="col-11">
+    <div class="row justify-content-center p-2">
+        <h2 class="col-12 text-center mt-3 h1">{% if school_class %}{{ school_class.name }} {% else %}Alla Klasser{% endif %}</h2>
+        <hr class="col-11 mb-0">
+        
+            <div class="row justify-content-center gy-3 gx-3 mt-1 mb-2">
+                {% for school_class in school_classes %}
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="{% url 'school_class' school_class.slug %}">
+                            <div class="content-container">
+                                <h4 class="class-name mb-0 pb-1">{{ school_class.name }}</h4>
+                                <img src="https://media.istockphoto.com/id/1227523318/sv/vektor/stor-brun-stubbe-med-gr%C3%A4s-i-tecknad-stil-p%C3%A5-vit-bakgrund.jpg?s=170667a&w=0&k=20&c=L3YvQOBVXNnKY2mgDVOIcqQ5midk7evi7Ziu93st_hI=" alt=""
+                                class="img-fluid">
+                            </div>
+                        </a>
+                    </div>
+                
+                {% endfor %}
+            </div>
+        
     </div>
 </div>
 
 <!-- School_classes.html content ends here -->
-{% endblock %}
+{% endblock %}+
