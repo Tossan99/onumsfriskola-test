@@ -42,28 +42,27 @@ h6 {
     display: inline-block;
     position: relative;
   }
-
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #1a1a1a;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
   
-  .nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+.nav-link::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #1a1a1a;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
 
 
 /* Footer -------------------------------------------------- */
-
 #footer-logo {
     width: 120px;
     background-color: rgb(216, 216, 216);
@@ -87,3 +86,12 @@ color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Containers -------------------------------------------------- */
+.main-container {
+    background-color: rgb(236, 240, 241, 0.85);
+}
+
+.content-container {
+    background-color: #ECF0F1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
