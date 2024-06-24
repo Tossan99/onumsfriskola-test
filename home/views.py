@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Document
+from .models import Document, Staff
 
 def view_home(request):
     """
@@ -29,3 +29,15 @@ def view_about(request):
     """
     return render(request, 'home/about.html')
 
+
+def view_staff(request):
+    """
+    View to render staff page
+    """
+    staffs = Staff.objects.all()
+
+    context = {
+        "staffs": staffs,
+    }
+
+    return render(request, 'home/staff.html', context)
