@@ -33,20 +33,9 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link {% if request.path == home_url %}nav-active" 
-                    aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    aria-current="page{% endif %}" href="{% url 'school_classes' %}">
                         KLASSER
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Stubben (Förskola)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Myrstacken (Förskola)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Å-sidan (Förskola)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Förskoleklass (6-års)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Björken (1an-3an)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Kastanjen (1an-3an)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Lönnen (4an-6an)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Linden (4an-6an)</a></li>
-                        <li><a class="dropdown-item" href="{% url 'home' %}">Spindelnätet (Fritids)</a></li>
-                    </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link {% if request.path == home_url %}nav-active" 
