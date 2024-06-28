@@ -1,0 +1,90 @@
+/* Import Google Fonts -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/* General -------------------------------------------------- */
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/background.webp");
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", serif;
+}
+
+
+/* Navbar -------------------------------------------------- */
+#nav-logo {
+    width: 150px;
+}
+
+.navbar {
+    background-color: #cce7bd !important;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Lilita One", sans-serif;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+  }
+  
+.nav-link::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #1a1a1a;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+/* Footer -------------------------------------------------- */
+
+#footer-logo {
+    width: 120px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #758c69;
+    color: white;
+}
+
+/* Containers -------------------------------------------------- */
+.main-container {
+    background-color: rgb(236, 240, 241, 0.85);
+}
+
+.content-container {
+    position: relative;
+    background-color: #ECF0F1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
