@@ -44,21 +44,21 @@ h6 {
   }
   
 .nav-link::after {
-content: '';
-position: absolute;
-width: 100%;
-transform: scaleX(0);
-height: 2px;
-bottom: 0;
-left: 0;
-background-color: #1a1a1a;
-transform-origin: bottom right;
-transition: transform 0.25s ease-out;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
 .nav-link:hover::after {
-transform: scaleX(1);
-transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 
@@ -72,8 +72,8 @@ transform-origin: bottom left;
 }
 
 footer {
-background-color: #758c69;
-color: white;
+    background-color: #758c69;
+    color: white;
 }
 
 /* Containers -------------------------------------------------- */
@@ -95,3 +95,4 @@ color: white;
     background-color: #ECF0F1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
