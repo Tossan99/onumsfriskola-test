@@ -11,4 +11,3 @@ Pipfile
 .venv
 db.sqlite3
 .vscode
-staticfiles
