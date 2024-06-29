@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}Personal{% endblock %}
+
+{% block content %}
+<!-- staff.html content starts here -->
+
+<div class="container-xxl main-container">
+    <div class="row">
+        <h2 class="col-12 text-center mt-4 h1">Personal</h2>
+        <hr class="col-11">
+        {% for staff in staffs %}
+            <table>
+                <tr>
+                    <th>Förnamn</th>
+                    <th>Efternamn</th>
+                    <th>Avdelning</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>{{ staff.fname }}</td>
+                    <td>{{ staff.lname }}</td>
+                    <td>{{ staff.department}}</td>
+                    <td>{{ staff.email }}</td>
+                </tr>
+            </table>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- staff.html content ends here -->
+{% endblock %}
